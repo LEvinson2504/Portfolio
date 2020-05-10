@@ -1,0 +1,33 @@
+{
+    "name": "yourname",
+    "contact": "+65 0000 0000",
+    "email": "myemail@domain.com",
+    "projects": [
+        {
+            "name": "projectname",
+            "description": "projectdescription",
+            "link": "https://github.com/"
+        },
+        {
+            "name": "projectname",
+            "description": "projectdescription",
+            "link": "https://github.com/"
+        },
+        {
+            "name": "projectname",
+            "description": "projectdescription",
+            "link": "https://github.com/"
+        }
+    ],
+    "social": [
+        {
+            "link": "https://facebook.com/"
+        },
+        {
+            "link": "https://facebook.com/"
+        },
+        {
+            "link": "https://facebook.com/"
+        }
+    ]
+}

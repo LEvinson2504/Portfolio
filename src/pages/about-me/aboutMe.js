@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Social extends Component {
+class AboutMe extends Component {
     render() {
         return (
             <section class="hero is-dark is-medium">
@@ -19,4 +19,4 @@ class Social extends Component {
     }
 }
 
-export default Social;
+export default AboutMe;

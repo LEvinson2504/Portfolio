@@ -1,6 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './index.css'
+import Projects from "./pages/projects/Projects";
+import Home from "./pages/home/home";
 // import Home from './pages/home/home';
 import Social from './pages/social/Social'
 import Navbar from './components/navbar/navbar'
@@ -9,8 +17,20 @@ import Navbar from './components/navbar/navbar'
 function Portfolio() {
   return(
     <>
-      <Navbar />
-      <Social />
+      <Router>
+        <Navbar />
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL.  */}
+          <Switch>
+              <Route path="/projects">
+                <Projects />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+          </Switch>
+        <Social />
+      </Router>
     </>
   )
 }

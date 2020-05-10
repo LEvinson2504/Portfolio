@@ -10,7 +10,7 @@ class Home extends Component {
 		<section class="hero is-info is-large">
 		<div class="hero-body">
 		  <div class="container">
-			<h1 class="title">
+			<h1 class="title is-size-1 has-text-weight-bold">
 			  	I am a Front-end Developer, yes really.
 			</h1>
 			<h2 class="subtitle">

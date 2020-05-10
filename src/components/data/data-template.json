@@ -1,0 +1,31 @@
+{
+    "name": "yourname",
+    "projects": [
+        {
+            "name": "projectname",
+            "description": "projectdescription",
+            "link": "https://github.com/"
+        },
+        {
+            "name": "projectname",
+            "description": "projectdescription",
+            "link": "https://github.com/"
+        },
+        {
+            "name": "projectname",
+            "description": "projectdescription",
+            "link": "https://github.com/"
+        }
+    ],
+    "social": [
+        {
+            "link": "https://facebook.com/"
+        },
+        {
+            "link": "https://facebook.com/"
+        },
+        {
+            "link": "https://facebook.com/"
+        }
+    ]
+}
