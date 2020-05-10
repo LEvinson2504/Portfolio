@@ -12,6 +12,7 @@ import Home from "./pages/home/home";
 // import Home from './pages/home/home';
 import Social from './pages/social/Social'
 import Navbar from './components/navbar/navbar'
+import AboutMe from './pages/about-me/aboutMe';
 // import PropTypes from 'prop-types'
 
 function Portfolio() {
@@ -24,6 +25,9 @@ function Portfolio() {
           <Switch>
               <Route path="/projects">
                 <Projects />
+              </Route>
+              <Route path="/aboutme">
+                <AboutMe />
               </Route>
               <Route path="/">
                 <Home />
