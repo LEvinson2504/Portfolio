@@ -1,24 +1,30 @@
 import React, {Component} from 'react';
 // import PropTypes from 'prop-types'
-// import Projects from '../projects/Projects.js';
-import Social from '../social/Social.js';
 import Button from '../../components/buttons/button.js';
+import { default as Data } from '../../components/data/data.json';
 
 class Home extends Component {
-	// constructor() {
-	// 	super();
+	constructor(props) {
+		super(props);
 
-	// 	this.state = {
-	// 		isFetching: false,
-	// 		data: null
-	// 	}
+		this.state = {
+			isFetching: false,
+			data: {}
+		}
+	}
 
-	// 	Init();
-	// }
+	componentDidMount() {
+		this.Init();
+	}
 
-	// Init() {
-	// 	console.log("Fetching all data from json");
-	// }
+	Init() {
+		if (!this.isFetching) {
+			this.setState({data: Data}, () => {
+				console.log("Data is fetched.");
+				this.isFetching = true;
+			});
+		};
+	}
 
 	render() {
 		return (
@@ -26,11 +32,12 @@ class Home extends Component {
 			<div class="hero-body">
 			<div class="container">
 				<h1 class="title is-size-1 has-text-weight-bold">
-					I am a Front-end Developer, yes really.
+					{this.state.data.title}
 				</h1>
 				<h2 class="subtitle">
-					<Button buttonName="Learn more" buttonLink="/projects" />
+					{this.state.data.subtitle}
 				</h2>
+				<Button buttonName="Learn more" buttonLink="/projects" />
 			</div>
 			</div>
 		</section>

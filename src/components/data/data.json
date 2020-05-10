@@ -2,6 +2,8 @@
     "name": "yourname",
     "contact": "+65 0000 0000",
     "email": "myemail@domain.com",
+    "title": "I am a Front-end Developer, yes really.",
+    "subtitle": "Don't believe me?",
     "projects": [
         {
             "name": "projectname",

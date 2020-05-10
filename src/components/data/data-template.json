@@ -1,5 +1,8 @@
 {
     "name": "yourname",
+    "contact": "+65 0000 0000",
+    "email": "myemail@domain.com",
+    "title": "I am a Front-end Developer, yes really.",
     "projects": [
         {
             "name": "projectname",
@@ -27,5 +30,50 @@
         {
             "link": "https://facebook.com/"
         }
-    ]
+    ],
+    "about": {
+        "job_title": "jobtitle",
+        "description": "description",
+        "signature": "https://imgur.com",
+        "expertise": [
+            {
+                "title": "title",
+                "description": "description"
+            },
+            {
+                "title": "title",
+                "description": "description"
+            },
+            {
+                "title": "title",
+                "description": "description"
+            },
+            {
+                "title": "title",
+                "description": "description"
+            }
+        ],
+        "skills": [
+            {
+                "title": "title",
+                "proficiency": 100
+            },
+            {
+                "title": "title",
+                "proficiency": 100
+            },
+            {
+                "title": "title",
+                "proficiency": 100
+            },
+            {
+                "title": "title",
+                "proficiency": 100
+            },
+            {
+                "title": "title",
+                "proficiency": 100
+            }
+        ]
+    }
 }
