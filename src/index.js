@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import './index.css'
-import Navbar from './navbar'
-import Intro from './intro'
-import Main from './main'
+// import Home from './pages/home/home';
+import Social from './pages/social/Social'
+import Navbar from './components/navbar/navbar'
 // import PropTypes from 'prop-types'
 
 function Portfolio() {
   return(
     <>
       <Navbar />
-      <Intro />
-      <Main />
+      <Social />
     </>
   )
 }
