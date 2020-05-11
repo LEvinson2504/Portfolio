@@ -26,15 +26,15 @@ function Portfolio() {
               <Route path="/projects">
                 <Projects />
               </Route>
-              <Route path="/aboutme">
+              <Route path="/about">
                 <AboutMe />
               </Route>
               <Route path="/">
                 <Home />
               </Route>
           </Switch>
-        <Social />
       </Router>
+      <Social />
     </>
   )
 }
