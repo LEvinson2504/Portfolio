@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import {
-    Link
-} from "react-router-dom";
-import Button from '../../components/buttons/button.js';
+import NavButton from '../../components/buttons/navbutton.js';
 import ProjectTile from '../../components/project-tile/project-tile.js';
 import Data from '../../components/data/data.json';
 
@@ -54,17 +51,12 @@ class Projects extends Component {
                                             />
                                         </div>
                                     </>
-                                    
                                 })}
                         </div>
                     </div>
                     <div class="column"></div>
                 </div>
-                    <div class="buttons is-centered">
-                        <Link to="/" class="button is-primary is-rounded" style={{textDecoration:'none'}}>
-                            Return to home page
-                        </Link>
-                    </div>
+                        <NavButton buttonAlign="is-centered" />
             </>
         );
     }
