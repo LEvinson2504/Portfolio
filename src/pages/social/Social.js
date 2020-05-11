@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Data from "../../components/data/data.json";
 import { motion } from "framer-motion";
+
 class Social extends Component {
 	constructor(props) {
 		super(props);
@@ -28,42 +29,44 @@ class Social extends Component {
 		if (this.state.isFetching) {
 			return "Not loaded yet";
 		} else {
-
-		return (
-			<section class="hero is-dark is-medium">
-				<div class="hero-body">
-					<div class="container">
-						<h1 class="title is-size-3 text-center">
-							Follow me on: &nbsp;
-							<a
-								href={this.state.data.social[0].link ?? ""}
-								class="has-text-light"
-							>	
-							<motion.i 
-								whileHover={{ scale: 1.2 }} 
-								class="fab fa-instagram">
-							</motion.i>
-							</a>{" "}
-							&nbsp;
-							<a
-								href={this.state.data.social[1].link ?? ""}
-								class="has-text-light"
-							>
-								<i class="fab fa-facebook-f"></i>
-							</a>{" "}
-							&nbsp;
-							<a
-								href={this.state.data.social[2].link ?? ""}
-								class="has-text-light"
-							>
-								<i class="fab fa-github"></i>
-							</a>
-						</h1>
+			return (
+				<section class="hero is-dark is-medium">
+					<div class="hero-body">
+						<div class="container">
+							<h1 class="title is-size-3 text-center">
+								Follow me on: &nbsp;
+								<motion.a
+									whileHover={{ scale: 1.5 }}
+									whileTap={{ scale: 0.95 }}
+									href={this.state.data.social[0].link ?? ""}
+									class="has-text-light is-inline-block"
+								>
+									<i class="fab fa-instagram" />
+								</motion.a>{" "}
+								&nbsp;
+								<motion.a
+									whileHover={{ scale: 1.5 }}
+									whileTap={{ scale: 0.95 }}
+									href={this.state.data.social[1].link ?? ""}
+									class="has-text-light is-inline-block"
+								>
+									<i class="fab fa-facebook-f"></i>
+								</motion.a>{" "}
+								&nbsp;
+								<motion.a
+									whileHover={{ scale: 1.5 }}
+									whileTap={{ scale: 0.95 }}
+									href={this.state.data.social[2].link ?? ""}
+									class="has-text-light is-inline-block"
+								>
+									<i class="fab fa-github"></i>
+								</motion.a>
+							</h1>
+						</div>
 					</div>
-				</div>
-			</section>
-		);
-	}
+				</section>
+			);
+		}
 	}
 }
 export default Social;
