@@ -33,39 +33,40 @@ class Projects extends Component {
     render() {
         if (this.state.isFetching) {
             return "Not loaded yet"
-        } else {
-            return (
-                <>
-                    <div class="columns">
-                        <div class="column"></div>
-                        <div class="column is-one-third-desktop is-two-thirds-tablet">
-                            <h3 class="title is-1 text-center">Projects</h3>
-                            <div class="tile is-ancestor is-vertical">
-                                <div class="tile is-parent">
-                                    {this.state.data.projects.map(obj => {
-                                        console.log(obj);
-                                        return <ProjectTile
-                                            key={obj.id}
-                                            name={obj.name}
-                                            description={obj.description}
-                                            imageLink={obj.description}
-                                            link={obj.link}
-                                        />
-                                    })}
-                                </div>
-                            </div>
-                        </div>
-                        <div class="column"></div>
-                    </div>
-                        <div class="buttons is-centered">
-                            <Link to="/" class="button is-primary is-rounded" style={{textDecoration:'none'}}>
-                                Return to home page
-                            </Link>
-                        </div>
-                </>
-            );
         }
-        
+
+        return (
+            <>
+                <div class="columns">
+                    <div class="column"></div>
+                    <div class="column is-two-thirds-desktop is-three-quarters-tablet">
+                        <h3 class="title is-1 text-center">Projects</h3>
+                        <div class="tile is-ancestor is-vertical">
+                                {this.state.data.projects.map(obj => {
+                                    return <>
+                                        <div class="tile is-parent">
+                                            <ProjectTile
+                                                key={obj.id}
+                                                imageLink={obj.imageLink}
+                                                title={obj.name}
+                                                subtitle={obj.description}
+                                                link={obj.link}
+                                            />
+                                        </div>
+                                    </>
+                                    
+                                })}
+                        </div>
+                    </div>
+                    <div class="column"></div>
+                </div>
+                    <div class="buttons is-centered">
+                        <Link to="/" class="button is-primary is-rounded" style={{textDecoration:'none'}}>
+                            Return to home page
+                        </Link>
+                    </div>
+            </>
+        );
     }
 }
 

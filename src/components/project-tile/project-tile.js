@@ -3,10 +3,10 @@ import Button from '../buttons/button.js';
 
 const ProjectTile = (props) => {
     return (
-        <article class={"tile is-parent " + `${props.tileSize}`}>
+        <article class={`tile is-parent ${props.tileSize ?? ''}`}>
             <article class="tile is-child box">
-                <figure class={"image " + `${props.imageStyle ?? 'is-fullwidth'}` }>
-                    <img src={"http://loremflickr.com/300/300/" + `${props.imageLink ?? 'office'}`} class="is-rounded" alt="button" />
+                <figure class={`image ${props.imageStyle ?? 'is-16by9'}` }>
+                    <img src={`http://loremflickr.com/480/272/${props.imageLink ?? 'office'}`} alt="button" />
                 </figure>
                 <h1 class="title">{props.title ?? 'Title'}</h1>
                 <h2 class="subtitle">{props.subtitle ?? 'Subtitle'}</h2>
@@ -14,7 +14,7 @@ const ProjectTile = (props) => {
                     <Button
                         buttonName="Read More..."
                         buttonStyle="button is-link is-fullwidth"
-                        buttonLink={props.buttonLink}
+                        buttonLink={props.link}
                     />
                 </div>
             </article>

@@ -27,6 +27,11 @@ class Home extends Component {
 	}
 
 	render() {
+		if (this.state.isFetching)
+		{
+			return "Not loaded yet"
+		}
+
 		return (
 			<section class="hero is-info is-large">
 			<div class="hero-body">
