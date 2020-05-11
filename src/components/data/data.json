@@ -6,18 +6,21 @@
     "subtitle": "Don't believe me?",
     "projects": [
         {
-            "name": "projectname",
-            "description": "projectdescription",
+            "id": 1,
+            "name": "projectname 1",
+            "description": "apple",
             "link": "https://github.com/"
         },
         {
-            "name": "projectname",
-            "description": "projectdescription",
+            "id": 2,
+            "name": "projectname 2",
+            "description": "orange",
             "link": "https://github.com/"
         },
         {
-            "name": "projectname",
-            "description": "projectdescription",
+            "id": 3,
+            "name": "projectname 3",
+            "description": "pear",
             "link": "https://github.com/"
         }
     ],
@@ -38,41 +41,50 @@
         "signature": "https://imgur.com",
         "expertise": [
             {
+                "id": 1,
                 "title": "title",
                 "description": "description"
             },
             {
+                "id": 2,
                 "title": "title",
                 "description": "description"
             },
             {
+                "id": 3,
                 "title": "title",
                 "description": "description"
             },
             {
+                "id": 4,
                 "title": "title",
                 "description": "description"
             }
         ],
         "skills": [
             {
-                "title": "title",
+                "id": 1,
+                "title": "title 1",
                 "proficiency": 100
             },
             {
-                "title": "title",
+                "id": 2,
+                "title": "title 2",
                 "proficiency": 100
             },
             {
-                "title": "title",
+                "id": 3,
+                "title": "title 3",
                 "proficiency": 100
             },
             {
-                "title": "title",
+                "id": 4,
+                "title": "title 4",
                 "proficiency": 100
             },
             {
-                "title": "title",
+                "id": 5,
+                "title": "title 5",
                 "proficiency": 100
             }
         ]

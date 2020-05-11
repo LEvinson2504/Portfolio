@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import '../../index'
+import '../../index';
+import data from '../../components/data/data.json';
+
 class AboutMe extends Component {
   render() {
     return (
@@ -11,6 +13,7 @@ class AboutMe extends Component {
               <img
                 class=""
                 src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mountainviewphoto.com%2Fwp-content%2Fuploads%2F2015%2F12%2Fheadshots-slide.jpg&f=1&nofb=1"
+                alt = ""
               />
               <figcaption>
                 <h2 class="has-text-weight-bold is-size-4">Name Surname</h2>
@@ -61,6 +64,7 @@ class AboutMe extends Component {
               <img
                 class=""
                 src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.entrepreneur.com%2Fstatic%2F1424379715-skills-to-succeed-chart.jpg&f=1&nofb=1"
+                alt = ""
               />
             </figure>
               </div>

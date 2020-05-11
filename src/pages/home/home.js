@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 // import PropTypes from 'prop-types'
 import Button from '../../components/buttons/button.js';
-import { default as Data } from '../../components/data/data.json';
+import Data from '../../components/data/data.json';
 
 class Home extends Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			isFetching: false,
+			isFetching: true,
 			data: {}
 		}
 	}
@@ -18,10 +18,10 @@ class Home extends Component {
 	}
 
 	Init() {
-		if (!this.isFetching) {
+		if (this.state.isFetching) {
 			this.setState({data: Data}, () => {
 				console.log("Data is fetched.");
-				this.isFetching = true;
+				this.setState({isFetching: false});
 			});
 		};
 	}
@@ -37,7 +37,7 @@ class Home extends Component {
 				<h2 class="subtitle">
 					{this.state.data.subtitle}
 				</h2>
-				<Button buttonName="Learn more" buttonLink="/projects" />
+				<Button buttonName="Learn more" buttonLink="/about" />
 			</div>
 			</div>
 		</section>
