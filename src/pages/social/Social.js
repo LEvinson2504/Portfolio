@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Data from "../../components/data/data.json";
+import { motion } from "framer-motion";
 class Social extends Component {
 	constructor(props) {
 		super(props);
@@ -26,7 +27,7 @@ class Social extends Component {
 	render() {
 		if (this.state.isFetching) {
 			return "Not loaded yet";
-		}
+		} else {
 
 		return (
 			<section class="hero is-dark is-medium">
@@ -37,8 +38,11 @@ class Social extends Component {
 							<a
 								href={this.state.data.social[0].link ?? ""}
 								class="has-text-light"
-							>
-								<i class="fab fa-instagram"></i>
+							>	
+							<motion.i 
+								whileHover={{ scale: 1.2 }} 
+								class="fab fa-instagram">
+							</motion.i>
 							</a>{" "}
 							&nbsp;
 							<a
@@ -59,6 +63,7 @@ class Social extends Component {
 				</div>
 			</section>
 		);
+	}
 	}
 }
 export default Social;

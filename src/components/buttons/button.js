@@ -1,9 +1,13 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 const button = (props) => {
     return (
-        <a
+        <motion.a
             class={props.buttonStyle ?? 'button is-primary'}
+            style={{ textDecoration: "none" }}
+            whileHover={{ scale: 1.01 }}
+            whileTap={{ scale: 0.99 }}
             href={props.buttonLink ?? '/'}>
                 <span class="icon is-small">
                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -11,7 +15,7 @@ const button = (props) => {
                 <span>
                     {props.buttonName ?? 'Button'}
                 </span>
-        </a>
+        </motion.a>
     );
 };
 
