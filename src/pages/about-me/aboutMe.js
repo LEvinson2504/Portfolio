@@ -72,13 +72,13 @@ class AboutMe extends Component {
               </figure>
             </div>
             <div class="columns">
-              <div class="column is-5"></div>
+              <div class="column is-4"></div>
               <div class="column is-full">
                 <h2 class="title has-text-dark"> Expertise </h2>
                 {this.state.data.about.expertise.map((item) => (
                   <div class="columns">
                     <div class="column">
-                      <img src={item.imageLink ?? ""} alt="" />
+                      {/* <img src={item.imageLink ?? ""} alt="" /> */}
                       <h2 class="has-text-black is-size-5">{item.title}</h2>
                       <p>{item.description}</p>
                     </div>
@@ -87,7 +87,7 @@ class AboutMe extends Component {
               </div>
             </div>
           </div>
-          <div class="columns">
+          <div class="columns margin-top">
             <div class="column">
               <div class="columns">
                 <div class="column is-4"></div>
