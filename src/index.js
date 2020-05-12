@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import './index.css'
 import Projects from "./pages/projects/Projects";
-import Home from "./pages/home/Home";
+import Home from "./pages/home/home";
 // import Home from './pages/home/home';
 import Social from './pages/social/Social'
 import Navbar from './components/navbar/navbar'
