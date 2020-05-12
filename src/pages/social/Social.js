@@ -32,7 +32,7 @@ class Social extends Component {
 			return (
 				<section class="hero is-dark is-medium">
 					<div class="hero-body">
-						<div class="container">
+						<div class="container is-desktop">
 							<h1 class="title is-size-3 text-center">
 								Follow me on: &nbsp;
 								<motion.a

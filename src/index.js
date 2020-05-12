@@ -9,11 +9,9 @@ import {
 import './index.css'
 import Projects from "./pages/projects/Projects";
 import Home from "./pages/home/home";
-// import Home from './pages/home/home';
 import Social from './pages/social/Social'
 import Navbar from './components/navbar/navbar'
 import AboutMe from './pages/about-me/aboutMe';
-// import PropTypes from 'prop-types'
 
 function Portfolio() {
   return(

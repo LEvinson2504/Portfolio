@@ -6,7 +6,7 @@ const ProjectTile = (props) => {
         <article class={`tile is-parent ${props.tileSize ?? ''}`}>
             <article class="tile is-child box">
                 <figure class={`image ${props.imageStyle ?? 'is-16by9'}` }>
-                    <img src={`http://loremflickr.com/480/272/${props.imageLink ?? 'office'}`} alt="button" />
+                    <img src={`${props.imageLink ?? 'http://loremflickr.com/480/272/default'}`} alt="button" />
                 </figure>
                 <h1 class="title">{props.title ?? 'Title'}</h1>
                 <h2 class="subtitle">{props.subtitle ?? 'Subtitle'}</h2>
