@@ -39,7 +39,7 @@ class Home extends Component {
 						<motion.div
 							initial={{ opacity: 0, x: 200 }}
 							animate={{ opacity: 1, x: 0 }}
-							transition={{ type: "spring", damping: 11, velocity: 2, duration: 0.5 }}
+							transition={{ type: "spring", damping: 7, velocity: 2, duration: 0.5 }}
 						>
 							<h1 class="title is-size-1 has-text-weight-bold">
 								{this.state.data.title}
@@ -48,14 +48,14 @@ class Home extends Component {
 						<motion.div
 							initial={{ opacity: 0, x: -200 }}
 							animate={{ opacity: 1, x: 0 }}
-							transition={{ type: "spring", damping: 20, velocity: 1, duration: 0.5 }}
+							transition={{ type: "spring", damping: 7, velocity: 1, duration: 0.5 }}
 						>
 							<h2 class="subtitle">{this.state.data.subtitle}</h2>
 						</motion.div>
 						<motion.div
 							initial={{ opacity: 0, y: 200 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ type: "spring", damping: 50, velocity: 2, duration: 0.5 }}
+							transition={{ type: "spring", damping: 7, velocity: 2, duration: 0.5 }}
 						>
 							<Button buttonName="Learn more" buttonLink="/about" />
 						</motion.div>
