@@ -83,10 +83,10 @@ class AboutMe extends Component {
 											src={item.imageLink ?? ""}
 											alt=""
 										/>
-										<h2 class="is-size-4 has-text-black">
+										<h2 class="has-text-black">
 											{item.title}
 										</h2>
-										<p class="is-size-5">
+										<p class="">
 											{item.description}
 										</p>
 									</div>
