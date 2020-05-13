@@ -98,40 +98,7 @@ class AboutMe extends Component {
 						<div class="column has-text-justified">
 							<h2 class="title has-text-dark"> Summary </h2>
 							{/* Could make this a component */}
-							<p>
-								Elit qui adipisicing sint culpa ut tempor
-								commodo exercitation non proident do do et. Esse
-								do laborum voluptate id sit et ad excepteur aute
-								nulla veniam amet ullamco labore. Proident
-								tempor duis consequat nostrud proident. Pariatur
-								laborum mollit culpa incididunt labore sit quis
-								ad sit.
-							</p>
-							<p>
-								Culpa ut consequat mollit nulla nostrud magna
-								dolor irure commodo in. Dolor consequat ipsum
-								amet velit voluptate magna qui aute sit. Id in
-								nulla est quis commodo sit sit in enim
-								exercitation. Irure quis veniam aliqua irroident
-								laboris qui dolore elit reprehenderit quis id.
-								Duis officia adipisicing laboris dolore sint et
-								incididunt.
-							</p>
-							<p>
-								Consequat eu nostrud eiusmod aliqua id in ea
-								amet esse dolor cupidatat. Minim culpa non quis
-								esse in aliquip consequat pariatur eiusmod
-								voluptate deserunt nulla id. Sunt ea mollit sint
-								aliquip et magna. Esse proident dolore do
-								incididunt proident nisi irure proident nulla
-								ullamco adipisicing ullamco. Ad reprehenderit
-								cupidatat commodo duis duis ad aute incididunt
-								sit velit ipsum ex. Adipisicing tempor cillum
-								nisi eu id esse.Magna cillum velit laboris ut
-								est in occaecat veniam ex et nostrud dolor enim.
-								Aliqua esse tempor exercitation excepteur. Est
-								qui mollit reprehenderit consectetur laborum.
-							</p>
+							{this.state.data.about.summary}
 						</div>
 						<div class="column is-two-thirds">
 							<h2 class="title has-text-dark"> Skills </h2>
