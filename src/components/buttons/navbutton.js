@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const NavButton = (props) => {
 	return (
-		<motion.div 
-			class={`buttons ${props.buttonAlign ?? ''}`}
+		<motion.div
+			class={`buttons ${props.buttonAlign ?? ""}`}
 			whileHover={{ scale: 1.05 }}
 			whileTap={{ scale: 0.95 }}
 		>

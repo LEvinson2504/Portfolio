@@ -6,14 +6,14 @@ import { motion } from "framer-motion";
 
 const list = {
 	hidden: {
-        x: -200,
+		x: -200,
 		opacity: 0,
 		transition: {
 			when: "afterChildren",
 		},
 	},
 	visible: {
-        x: 0,
+		x: 0,
 		opacity: 1,
 		transition: {
 			when: "beforeChildren",
@@ -66,7 +66,10 @@ class Projects extends Component {
 							{this.state.data.projects.map((obj) => {
 								return (
 									<>
-										<motion.div class="tile is-parent" variants={list}>
+										<motion.div
+											class="tile is-parent"
+											variants={list}
+										>
 											<ProjectTile
 												key={obj.id}
 												imageLink={obj.imageLink}
