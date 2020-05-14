@@ -3,7 +3,6 @@ import "../../index";
 import Data from "../../components/data/data.json";
 import { motion } from "framer-motion";
 import ProgressBar from "../../components/progressbar/progress"
-import { Frame } from "framer";
 
 const list = {
 	hidden: {
@@ -111,15 +110,7 @@ class AboutMe extends Component {
 										<p class="has-text-black subtitle">
 											{item.title}
 										</p>
-										<ProgressBar width={400} percent={item.proficiency}/>
-
-										{/* Another implementation */}
-										{/* <progress
-											key={item.id}
-											class="progress progress-bar is-primary"
-											value={item.proficiency}
-											max="100"
-										></progress> */}
+										<ProgressBar width={400} percent={item.proficiency} />
 									</div>
 								</>
 							))}
