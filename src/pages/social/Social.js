@@ -20,8 +20,8 @@ class Social extends Component {
 		if (this.state.isFetching) {
 			this.setState({ data: Data }, () => {
 				this.setState({ isFetching: false });
-				console.log("Data is fetched.");
-				console.log(this.state.data);
+				// console.log("Data is fetched.");
+				// console.log(this.state.data);
 			});
 		}
 	}

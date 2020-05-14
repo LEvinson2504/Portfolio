@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import "../../index";
 import Data from "../../components/data/data.json";
 import { motion } from "framer-motion";
+import Progress from "../../components/progressbar/progress"
+import { Frame } from "framer";
+var ProgressBar = require('progressbar.js');
 
 const list = {
 	hidden: {
@@ -38,8 +41,8 @@ class AboutMe extends Component {
 		if (this.state.isFetching) {
 			this.setState({ data: Data }, () => {
 				this.setState({ isFetching: false });
-				console.log("Data is fetched.");
-				console.log(this.state.data);
+				// console.log("Data is fetched.");
+				// console.log(this.state.data);
 			});
 		}
 	}
@@ -104,16 +107,22 @@ class AboutMe extends Component {
 							<h2 class="title has-text-dark"> Skills </h2>
 							{/* Could make this a component */}
 							{this.state.data.about.skills.map((item) => (
-								<div class="column">
-									<p class="has-text-black subtitle">
-										{item.title}
-									</p>
-									<progress
-										class="progress is-primary"
-										value={item.proficiency}
-										max="100"
-									></progress>
-								</div>
+								<>
+									<div class="column">
+										<p class="has-text-black subtitle">
+											{item.title}
+										</p>
+										{/* <Progress progress = {item.proficiency} /> */}
+
+										{/* Another implementation */}
+										<progress
+											key={item.id}
+											class="progress progress-bar is-primary"
+											value={item.proficiency}
+											max="100"
+										></progress>
+									</div>
+								</>
 							))}
 						</div>
 					</div>

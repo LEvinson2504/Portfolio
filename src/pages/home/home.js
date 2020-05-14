@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 // import PropTypes from 'prop-types'
-import Button from "../../components/buttons/button.js";
 import Data from "../../components/data/data.json";
 import { motion } from "framer-motion";
+import NavButton from "../../components/buttons/navbutton.js";
 
 class Home extends Component {
 	constructor(props) {
@@ -72,9 +72,11 @@ class Home extends Component {
 								duration: 0.5,
 							}}
 						>
-							<Button
+							<NavButton
 								buttonName="Learn more"
+								buttonStyle="is-primary is-centered"
 								buttonLink="/about"
+								animate=""
 							/>
 						</motion.div>
 					</div>
