@@ -61,8 +61,8 @@ class AboutMe extends Component {
 								<figure class="image is-fullwidth">
 									<img
 										class=""
-										src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mountainviewphoto.com%2Fwp-content%2Fuploads%2F2015%2F12%2Fheadshots-slide.jpg&f=1&nofb=1"
-										alt=""
+										src={this.state.data.about.profile_picture}
+										alt="image"
 									/>
 								</figure>
 								<div class="card-content">
@@ -108,7 +108,7 @@ class AboutMe extends Component {
 								<>
 									<div class="column">
 										<p class="has-text-black subtitle">
-											{item.title}
+											<i class="fas fa-fill-drip"></i> {item.title}
 										</p>
 										<ProgressBar width={100} percent={item.proficiency} />
 									</div>
