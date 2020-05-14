@@ -13,7 +13,7 @@ export var ProgressBar = ({ width, percent }) => {
 	return (
 		<div>
 			<div className="progress-div" style={{ width: `${width}%` }}>
-				<div style={{ width: `${value}px` }} className="progress" />
+				<div style={{ width: `${value}%` }} className="progress" />
 			</div>
 		</div>
 	);
