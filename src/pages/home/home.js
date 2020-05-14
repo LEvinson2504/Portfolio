@@ -46,7 +46,7 @@ class Home extends Component {
 								duration: 0.5,
 							}}
 						>
-							<h1 class="title is-size-1 has-text-weight-bold">
+							<h1 class="title is-size-1 has-text-weight-bold has-text-right">
 								{this.state.data.title}
 							</h1>
 						</motion.div>
@@ -60,8 +60,9 @@ class Home extends Component {
 								duration: 0.5,
 							}}
 						>
-							<h2 class="subtitle">{this.state.data.subtitle}</h2>
+							<h2 class="subtitle is-size-4 has-text-justified">{this.state.data.subtitle}</h2>
 						</motion.div>
+						<br></br>
 						<motion.div
 							initial={{ opacity: 0, y: 200 }}
 							animate={{ opacity: 1, y: 0 }}
@@ -73,8 +74,9 @@ class Home extends Component {
 							}}
 						>
 							<NavButton
-								buttonName="Learn more"
-								buttonStyle="is-primary is-centered"
+								buttonName={this.state.data.subtitle_button}
+								buttonStyle="is-primary is-large"
+								buttonAlign="is-centered"
 								buttonLink="/about"
 								animate=""
 							/>

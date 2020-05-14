@@ -73,6 +73,7 @@ class Projects extends Component {
 											<ProjectTile
 												key={obj.id}
 												imageLink={obj.imageLink}
+												imageStyle={""}
 												title={obj.name}
 												subtitle={obj.description}
 												link={obj.link}

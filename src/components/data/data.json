@@ -1,37 +1,31 @@
 {
-	"name": "yourname",
-	"contact": "+65 0000 0000",
-	"email": "myemail@domain.com",
-	"title": "I am a Front-end Developer, yes really.",
-	"subtitle": "Veniam aliqua elit dolor ut duis eiusmod magna sunt anim occaecat consequat voluptate. Ipsum nulla aliqua aliqua amet ad eu est nisi id consectetur occaecat in. Quis laboris magna ad culpa cillum est ut labore anim incididunt do cupidatat ut. Aute dolore elit voluptate anim culpa officia officia adipisicing culpa cupidatat sint laboris non. Proident dolore eiusmod deserunt ad elit adipisicing est. Sit nostrud veniam amet nisi aute consequat veniam ad in amet. Eiusmod consequat amet in Lorem exercitation sunt.",
+	"name": "Putera Nik",
+	"contact": "+65 8666 0407",
+	"email": "puteranikdimas@gmail.com",
+	"title": "I create web apps, one commit at a time.",
+	"subtitle": "Hello, my name is Putera and I'm an aspiring web apps programmer.",
+	"subtitle_button": "Learn more about me",
 	"projects": [
 		{
 			"id": 1,
-			"name": "projectname 1",
-			"description": "Elit ullamco voluptate officia id fugiat duis duis nisi. Exercitation incididunt irure aliqua minim consectetur magna. Do esse dolor id nostrud in consectetur ea. Exercitation pariatur ea laboris magna nisi fugiat mollit sint pariatur aliquip irure. Sint mollit dolore adipisicing voluptate qui ut labore sunt elit labore minim voluptate anim. Esse consectetur veniam velit adipisicing ipsum culpa reprehenderit reprehenderit aliquip sint officia sit nulla.",
-			"link": "https://github.com/",
-			"imageLink": "http://loremflickr.com/480/272/cat"
+			"name": "React Portfolio",
+			"description": "A portfolio website created using React JS with Levinson from India in a matter of 3 days via Live Share on Visual Studio Code. We started on the 12th and completed on the 15th of May.",
+			"link": "https://github.com/AizenSousuke/React-Portfolio-Website",
+			"imageLink": "https://cdn.worldvectorlogo.com/logos/react.svg"
 		},
 		{
 			"id": 2,
-			"name": "projectname 2",
-			"description": "Do esse ut nostrud Lorem aute do ipsum labore id. Duis laborum ipsum enim est reprehenderit. Eiusmod deserunt pariatur duis in laboris.",
-			"link": "https://github.com/",
-			"imageLink": "http://loremflickr.com/480/272/devops"
+			"name": "Blog",
+			"description": "Created a blog with Dot Net Core 3.1 as its backend and React JS as the frontend. I'm the backend developer with 3 other people working on the project. We started March and the project is still pending completion.",
+			"link": "https://github.com/AizenSousuke/DotNetCoreReactREST",
+			"imageLink": "http://loremflickr.com/480/272/blog"
 		},
 		{
 			"id": 3,
-			"name": "projectname 3",
-			"description": "Exercitation anim velit elit anim id do occaecat et ullamco. Cillum officia magna ex adipisicing cupidatat dolor officia. Proident enim magna qui elit tempor. Aliquip ut duis eiusmod id in in commodo deserunt magna ullamco incididunt nulla. Consectetur reprehenderit labore excepteur do. Tempor cupidatat id cillum pariatur amet deserunt nisi duis occaecat deserunt et. Non sint ipsum fugiat magna irure aliquip cillum cupidatat ad anim reprehenderit proident ullamco.",
-			"link": "https://github.com/",
-			"imageLink": "http://loremflickr.com/480/272/item"
-		},
-		{
-			"id": 4,
-			"name": "projectname 4",
-			"description": "Ex esse ipsum eiusmod aliqua ipsum ex dolore Lorem labore est eiusmod ex sint. Labore nostrud fugiat tempor nulla velit excepteur anim cillum consectetur aliqua laborum anim. Tempor excepteur nulla et enim. Pariatur duis excepteur veniam irure aliqua nisi excepteur. Voluptate culpa enim qui minim laborum occaecat et reprehenderit sint irure adipisicing tempor adipisicing. Culpa laboris cillum sunt veniam cupidatat deserunt occaecat voluptate. Non cillum ad fugiat exercitation excepteur qui aliquip labore aliqua occaecat do adipisicing.",
-			"link": "https://github.com/",
-			"imageLink": "http://loremflickr.com/480/272/cloud"
+			"name": "Recipe List",
+			"description": "A recipe list created using the Ionic Framework. It is using Firebase as its backend and Imgur API as its image hoster.",
+			"link": "https://github.com/AizenSousuke/Angular-Ionic-CRUD",
+			"imageLink": "http://loremflickr.com/480/272/Food"
 		}
 	],
 	"social": [
@@ -42,82 +36,59 @@
 			"link": "https://facebook.com/"
 		},
 		{
-			"link": "https://github.com/"
+			"link": "https://github.com/AizenSousuke"
 		}
 	],
 	"about": {
-		"job_title": "jobtitle",
-		"summary": "Elit mollit dolor nisi in proident laboris amet. Lorem exercitation nisi commodo exercitation elit esse cupidatat enim sint. Lorem exercitation aliqua occaecat deserunt et pariatur nisi cillum. Est est incididunt adipisicing occaecat dolor pariatur. Commodo Lorem laboris id qui elit culpa Lorem duis reprehenderit consectetur magna aute nisi eiusmod. Eiusmod eu magna est quis Lorem et.",
-		"signature": "https://imgur.com",
+		"profile_picture": "http://loremflickr.com/512/512/king",
+		"job_title": "Web App Developer",
+		"summary": "I think about code all the time. I love to create applications that solves problems.",
+		"signature": "http://loremflickr.com/128/128/signature",
 		"expertise": [
 			{
 				"id": 1,
-				"title": "title",
-				"description": "description",
-				"imageLink": "http://loremflickr.com/128/128/girl"
+				"title": "React",
+				"description": "React Framework",
+				"imageLink": "http://loremflickr.com/128/128/reactjs"
 			},
 			{
 				"id": 2,
-				"title": "title",
-				"description": "description",
-				"imageLink": "http://loremflickr.com/128/128/man"
+				"title": "ASP Dot Net Core 3.1",
+				"description": "C#",
+				"imageLink": "http://loremflickr.com/128/128/c#"
 			},
 			{
 				"id": 3,
-				"title": "title",
-				"description": "description",
-				"imageLink": "http://loremflickr.com/128/128/robot"
-			},
-			{
-				"id": 4,
-				"title": "title",
-				"description": "description",
-				"imageLink": "http://loremflickr.com/128/128/hun"
-			},
-			{
-				"id": 5,
-				"title": "title",
-				"description": "description",
-				"imageLink": "http://loremflickr.com/128/128/bear"
-			},
-			{
-				"id": 6,
-				"title": "title",
-				"description": "description",
-				"imageLink": "http://loremflickr.com/128/128/lion"
-			},
-			{
-				"id": 7,
-				"title": "title",
-				"description": "description",
-				"imageLink": "http://loremflickr.com/128/128/rainbow"
+				"title": "Games Development",
+				"description": "Unity",
+				"imageLink": "http://loremflickr.com/128/128/games"
 			}
 		],
 		"skills": [
 			{
 				"id": 1,
-				"title": "title 1",
-				"proficiency": 10
+				"title": "C#",
+				"proficiency": 65
 			},
 			{
 				"id": 2,
-				"title": "title 2",
-				"proficiency": 90
+				"title": "Typescript",
+				"proficiency": 70
 			},
 			{
 				"id": 3,
-				"title": "title 3",
-				"proficiency": 50
+				"title": "Javascript",
+				"proficiency": 65
 			},
 			{
 				"id": 4,
-				"title": "title 4",
-				"proficiency": 10
+				"title": "Docker",
+				"proficiency": 80
 			},
 			{
 				"id": 5,
-				"title": "title 5",
-				"proficiency": 80
+				"title": "Windows",
+				"proficiency": 95
 			}
 		]
 	}
