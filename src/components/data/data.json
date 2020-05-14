@@ -97,27 +97,27 @@
 			{
 				"id": 1,
 				"title": "title 1",
-				"proficiency": 10
+				"proficiency": 0.1
 			},
 			{
 				"id": 2,
 				"title": "title 2",
-				"proficiency": 90
+				"proficiency": 0.9
 			},
 			{
 				"id": 3,
 				"title": "title 3",
-				"proficiency": 50
+				"proficiency": 0.5
 			},
 			{
 				"id": 4,
 				"title": "title 4",
-				"proficiency": 100
+				"proficiency": 1
 			},
 			{
 				"id": 5,
 				"title": "title 5",
-				"proficiency": 80
+				"proficiency": 0.8
 			}
 		]
 	}

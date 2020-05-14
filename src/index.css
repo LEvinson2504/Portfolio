@@ -46,8 +46,15 @@ body {
 	margin-top: 5px;
 }
 
-.progress-bar {
-	-webkit-transition: 50% 4s ease;
-	-o-transition: 50% 4s ease;
-	transition: 50% 4s ease;
+.progress-div {
+    background-color: rgb(233, 233, 233);
+    border-radius: .5rem;
 }
+
+.progress{
+	background-color: rgb(62, 122, 235);
+	height: 10px;
+	border-radius: 1rem;
+	transition: 2s ease;
+	transition-delay: 0.5s;
+  }

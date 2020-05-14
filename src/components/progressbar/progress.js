@@ -1,34 +1,22 @@
-import React, { useState, useEffect } from "react";
-var ProgressBar = require('progressbar.js');
-// import { Frame } from 'framer';
+import * as React from 'react';
 
-export default function Progress({ progress }) {
-	// let [value, setValue] = useState(0);
-	// useEffect(() => {
-	//     while(value < progress){
-	//         setTimeout(() => {
-	//             setValue(++value)
-	//         }, 100)
-	//     }
-	// })
-	// function handleValue() {
-	// 	while (value < progress) {
-	// 		setTimeout(() => {
-	// 			setValue(++value);
-	// 		}, 100);
-	// 	}
-    // }
-	// setValue(){
-	//     while(value < progress) {
-	//         setTimeout(() => value++, 500)
+import "../../../src/index"
 
-	//     }
-	// }
-	
-	let bar = new ProgressBar.Line('#progress', {easing: 'easeInOut'});
-	bar.animate(1);
+
+export var ProgressBar = ({ width, percent }) => {
+
+	const [value, setValue] = React.useState(0);
+  
+	React.useEffect(() => {
+	  setValue(percent * width);
+	}, [percent, width]);
+  
 	return (
-		<div>
+	  <div>
+		<div className="progress-div" style={{ width: width }}>
+		  <div style={{ width: `${value}px` }} className="progress" />
 		</div>
+	  </div>
 	);
-}
+  };	
+export default ProgressBar;

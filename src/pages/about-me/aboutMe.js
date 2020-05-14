@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import "../../index";
 import Data from "../../components/data/data.json";
 import { motion } from "framer-motion";
-import Progress from "../../components/progressbar/progress"
+import ProgressBar from "../../components/progressbar/progress"
 import { Frame } from "framer";
-var ProgressBar = require('progressbar.js');
 
 const list = {
 	hidden: {
@@ -112,15 +111,15 @@ class AboutMe extends Component {
 										<p class="has-text-black subtitle">
 											{item.title}
 										</p>
-										{/* <Progress progress = {item.proficiency} /> */}
+										<ProgressBar width={400} percent={item.proficiency}/>
 
 										{/* Another implementation */}
-										<progress
+										{/* <progress
 											key={item.id}
 											class="progress progress-bar is-primary"
 											value={item.proficiency}
 											max="100"
-										></progress>
+										></progress> */}
 									</div>
 								</>
 							))}
