@@ -6,8 +6,8 @@ const NavButton = (props) => {
 	return (
 		<motion.div
 			class={`buttons ${props.buttonAlign ?? ""}`}
-			whileHover={{ scale: 1.05 }}
-			whileTap={{ scale: 0.95 }}
+			whileHover={ props.animate ?? { scale: 1.05 } }
+			whileTap={ props.animate ?? { scale: 0.95 } }
 		>
 			<Link
 				to={`${props.buttonLink ?? "/"}`}
