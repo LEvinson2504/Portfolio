@@ -45,3 +45,9 @@ body {
 .margin-top {
 	margin-top: 5px;
 }
+
+.progress-bar {
+	-webkit-transition: 50% 4s ease;
+	-o-transition: 50% 4s ease;
+	transition: 50% 4s ease;
+}

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+var ProgressBar = require('progressbar.js');
 // import { Frame } from 'framer';
 
 export default function Progress({ progress }) {
-	let [value, setValue] = useState(0);
+	// let [value, setValue] = useState(0);
 	// useEffect(() => {
 	//     while(value < progress){
 	//         setTimeout(() => {
@@ -22,13 +23,12 @@ export default function Progress({ progress }) {
 	//         setTimeout(() => value++, 500)
 
 	//     }
-    // }
-
+	// }
+	
+	let bar = new ProgressBar.Line('#progress', {easing: 'easeInOut'});
+	bar.animate(1);
 	return (
-		<progress
-			class="progress is-primary"
-			value={value}
-			max={100}
-		></progress>
+		<div>
+		</div>
 	);
 }

@@ -19,4 +19,4 @@ Edit the json file in src/components/data/data.json folder
 https://github.com/LEvinson2504
 https://github.com/AizenSousuke
 
-12 - 14 Mar 2020
+12 - 14 May 2020
