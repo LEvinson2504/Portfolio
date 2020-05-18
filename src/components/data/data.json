@@ -62,6 +62,30 @@
 				"title": "Games Development",
 				"description": "Unity",
 				"imageLink": "http://loremflickr.com/1024/576/games"
+			},
+			{
+				"id": 4,
+				"title": "Video Editing",
+				"description": "After Effects",
+				"imageLink": "http://loremflickr.com/1024/576/video"
+			},
+			{
+				"id": 5,
+				"title": "Video Editing",
+				"description": "After Effects",
+				"imageLink": "http://loremflickr.com/1024/576/video"
+			},
+			{
+				"id": 6,
+				"title": "Video Editing",
+				"description": "After Effects",
+				"imageLink": "http://loremflickr.com/1024/576/video"
+			},
+			{
+				"id": 7,
+				"title": "Video Editing",
+				"description": "After Effects",
+				"imageLink": "http://loremflickr.com/1024/576/video"
 			}
 		],
 		"skills": [

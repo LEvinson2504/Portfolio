@@ -55,7 +55,7 @@ class AboutMe extends Component {
 					animate="visible"
 					variants={list}
 				>
-					<div class="columns margin-top is-desktop">
+					<div class="columns margin-top">
 						<div class="column is-one-third">
 							<div class="card">
 								<figure class="image is-fullwidth">
@@ -72,19 +72,20 @@ class AboutMe extends Component {
 									<h3 class="subtitle">
 										{this.state.data.about.job_title}
 									</h3>
-									<a class="button is-outlined is-rounded is-fullwidth" href={`${'tel:'+this.state.data.contact}`}>{this.state.data.contact}</a>
-									<a class="button is-black is-rounded is-fullwidth" href={`${'mailto:'+this.state.data.email}`}>{this.state.data.email}</a>
+									<a class="button is-outlined is-rounded is-fullwidth" href={`${'tel:'+this.state.data.contact}`}><span class="icon is-small"><i class="fa fa-phone" aria-hidden="true"></i></span><span>Call Me</span></a>
+									<a class="button is-black is-rounded is-fullwidth" href={`${'mailto:'+this.state.data.email}`}><span class="icon is-small"><i class="fa fa-envelope-open" aria-hidden="true"></i></span><span>Email Me</span></a>
 								</div>
 							</div>
 						</div>
-						<div class="column is-two-thirds-desktop">
+						<div class="column is-two-thirds">
 							<h2 class="title has-text-dark"> Expertise </h2>
-							<div class="columns">
+							<div class="columns is-multiline">
 								{this.state.data.about.expertise.map((item) => (
-									<div class="column">
+									// Every 3 items, make a row
+									<div class="column is-half-tablet is-one-third-desktop">
 										<img
 											src={item.imageLink ?? ""}
-											alt=""
+											alt={item.title}
 										/>
 										<h2 class="has-text-black">
 											{item.title}
@@ -97,7 +98,7 @@ class AboutMe extends Component {
 							</div>
 						</div>
 					</div>
-					<div class="columns is-desktop">
+					<div class="columns is-one-third">
 						<div class="column has-text-justified">
 							<h2 class="title has-text-dark"> Summary </h2>
 							{/* Could make this a component */}
