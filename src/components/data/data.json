@@ -3,7 +3,7 @@
 	"contact": "+65 8666 0407",
 	"email": "puteranikdimas@gmail.com",
 	"title": "I create web apps, one commit at a time.",
-	"subtitle": "Hello, my name is Putera and I'm an aspiring web apps programmer.",
+	"subtitle": "My name is Putera and I'm an aspiring web apps programmer.",
 	"subtitle_button": "Learn more about me",
 	"projects": [
 		{
@@ -18,14 +18,14 @@
 			"name": "Blog",
 			"description": "Created a blog with Dot Net Core 3.1 as its backend and React JS as the frontend. I'm the backend developer with 3 other people working on the project. We started March and the project is still pending completion.",
 			"link": "https://github.com/AizenSousuke/DotNetCoreReactREST",
-			"imageLink": "http://loremflickr.com/480/272/blog"
+			"imageLink": "http://loremflickr.com/1024/576/blog"
 		},
 		{
 			"id": 3,
 			"name": "Recipe List",
 			"description": "A recipe list created using the Ionic Framework. It is using Firebase as its backend and Imgur API as its image hoster.",
 			"link": "https://github.com/AizenSousuke/Angular-Ionic-CRUD",
-			"imageLink": "http://loremflickr.com/480/272/Food"
+			"imageLink": "http://loremflickr.com/1024/576/Food"
 		}
 	],
 	"social": [
@@ -43,25 +43,49 @@
 		"profile_picture": "http://loremflickr.com/512/512/king",
 		"job_title": "Web App Developer",
 		"summary": "I think about code all the time. I love to create applications that solves problems.",
-		"signature": "http://loremflickr.com/128/128/signature",
+		"signature": "http://loremflickr.com/1024/576/signature",
 		"expertise": [
 			{
 				"id": 1,
 				"title": "React",
 				"description": "React Framework",
-				"imageLink": "http://loremflickr.com/128/128/reactjs"
+				"imageLink": "http://loremflickr.com/1024/576/reactjs"
 			},
 			{
 				"id": 2,
 				"title": "ASP Dot Net Core 3.1",
 				"description": "C#",
-				"imageLink": "http://loremflickr.com/128/128/c#"
+				"imageLink": "http://loremflickr.com/1024/576/c#dotnet"
 			},
 			{
 				"id": 3,
 				"title": "Games Development",
 				"description": "Unity",
-				"imageLink": "http://loremflickr.com/128/128/games"
+				"imageLink": "http://loremflickr.com/1024/576/gamesdevelopment"
+			},
+			{
+				"id": 4,
+				"title": "Video Editing",
+				"description": "After Effects and Premiere Pro",
+				"imageLink": "http://loremflickr.com/1024/576/videoediting"
+			},
+			{
+				"id": 5,
+				"title": "Dev Ops",
+				"description": "Docker",
+				"imageLink": "http://loremflickr.com/1024/576/devops"
+			},
+			{
+				"id": 6,
+				"title": "MySQL",
+				"description": "Linq, EF Framework",
+				"imageLink": "http://loremflickr.com/1024/576/SQL"
+			},
+			{
+				"id": 7,
+				"title": "Flight Simulation",
+				"description": "FA-18C",
+				"imageLink": "http://loremflickr.com/1024/576/F18"
 			}
 		],
 		"skills": [
