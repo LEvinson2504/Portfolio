@@ -65,7 +65,7 @@ class AboutMe extends Component {
 											this.state.data.about
 												.profile_picture
 										}
-										alt="image"
+										alt="profile-pic"
 									/>
 								</figure>
 								<div class="card-content">

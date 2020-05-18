@@ -53,10 +53,16 @@ class Projects extends Component {
 
 		return (
 			<div class="container is-widescreen">
+				<section class="hero">
+					<div class="hero-body">
+						<div class="container">
+							<h1 class="title is-1 text-center">Projects</h1>
+						</div>
+					</div>
+				</section>
 				<div class="columns">
 					<div class="column"></div>
 					<div class="column is-two-thirds-desktop is-three-quarters-tablet">
-						<h3 class="title is-1 text-center">Projects</h3>
 						<motion.div
 							class="tile is-ancestor is-vertical"
 							// initial="hidden"
@@ -99,6 +105,7 @@ class Projects extends Component {
 					<div class="column"></div>
 				</div>
 				<NavButton buttonAlign="is-centered" />
+				<div></div>
 			</div>
 		);
 	}
