@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../../index";
 import Data from "../../components/data/data.json";
 import { motion } from "framer-motion";
-import ProgressBar from "../../components/progressbar/progress"
+import ProgressBar from "../../components/progressbar/progress";
 
 const list = {
 	hidden: {
@@ -61,7 +61,10 @@ class AboutMe extends Component {
 								<figure class="image is-fullwidth">
 									<img
 										class=""
-										src={this.state.data.about.profile_picture}
+										src={
+											this.state.data.about
+												.profile_picture
+										}
 										alt="image"
 									/>
 								</figure>
@@ -72,8 +75,34 @@ class AboutMe extends Component {
 									<h3 class="subtitle">
 										{this.state.data.about.job_title}
 									</h3>
-									<a class="button is-outlined is-rounded is-fullwidth" href={`${'tel:'+this.state.data.contact}`}><span class="icon is-small"><i class="fa fa-phone" aria-hidden="true"></i></span><span>Call Me</span></a>
-									<a class="button is-black is-rounded is-fullwidth" href={`${'mailto:'+this.state.data.email}`}><span class="icon is-small"><i class="fa fa-envelope-open" aria-hidden="true"></i></span><span>Email Me</span></a>
+									<a
+										class="button is-outlined is-rounded is-fullwidth"
+										href={`${
+											"tel:" + this.state.data.contact
+										}`}
+									>
+										<span class="icon is-small">
+											<i
+												class="fa fa-phone"
+												aria-hidden="true"
+											></i>
+										</span>
+										<span>Call Me</span>
+									</a>
+									<a
+										class="button is-black is-rounded is-fullwidth"
+										href={`${
+											"mailto:" + this.state.data.email
+										}`}
+									>
+										<span class="icon is-small">
+											<i
+												class="fa fa-envelope-open"
+												aria-hidden="true"
+											></i>
+										</span>
+										<span>Email Me</span>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -90,9 +119,7 @@ class AboutMe extends Component {
 										<h2 class="has-text-black">
 											{item.title}
 										</h2>
-										<p class="">
-											{item.description}
-										</p>
+										<p class="">{item.description}</p>
 									</div>
 								))}
 							</div>
@@ -111,9 +138,13 @@ class AboutMe extends Component {
 								<>
 									<div class="column">
 										<p class="has-text-black subtitle">
-											<i class="fas fa-fill-drip"></i> {item.title}
+											<i class="fas fa-fill-drip"></i>{" "}
+											{item.title}
 										</p>
-										<ProgressBar width={100} percent={item.proficiency} />
+										<ProgressBar
+											width={100}
+											percent={item.proficiency}
+										/>
 									</div>
 								</>
 							))}
