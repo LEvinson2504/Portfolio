@@ -72,6 +72,8 @@ class AboutMe extends Component {
 									<h3 class="subtitle">
 										{this.state.data.about.job_title}
 									</h3>
+									<button class="button is-outlined is-rounded is-fullwidth">{this.state.data.contact}</button>
+									<a class="button is-black is-rounded is-fullwidth" href={`${'mailto:'+this.state.data.email}`}>{this.state.data.email}</a>
 								</div>
 							</div>
 						</div>
