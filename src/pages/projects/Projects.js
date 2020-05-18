@@ -52,7 +52,7 @@ class Projects extends Component {
 		}
 
 		return (
-			<>
+			<div class="container is-widescreen">
 				<div class="columns">
 					<div class="column"></div>
 					<div class="column is-two-thirds-desktop is-three-quarters-tablet">
@@ -99,7 +99,7 @@ class Projects extends Component {
 					<div class="column"></div>
 				</div>
 				<NavButton buttonAlign="is-centered" />
-			</>
+			</div>
 		);
 	}
 }
