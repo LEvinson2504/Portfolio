@@ -75,34 +75,36 @@ class AboutMe extends Component {
 									<h3 class="subtitle">
 										{this.state.data.about.job_title}
 									</h3>
-									<a
-										class="button is-outlined is-rounded is-fullwidth"
-										href={`${
-											"tel:" + this.state.data.contact
-										}`}
-									>
-										<span class="icon is-small">
-											<i
-												class="fa fa-phone"
-												aria-hidden="true"
-											></i>
-										</span>
-										<span>Call Me</span>
-									</a>
-									<a
-										class="button is-black is-rounded is-fullwidth"
-										href={`${
-											"mailto:" + this.state.data.email
-										}`}
-									>
-										<span class="icon is-small">
-											<i
-												class="fa fa-envelope-open"
-												aria-hidden="true"
-											></i>
-										</span>
-										<span>Email Me</span>
-									</a>
+									<div class="buttons">
+										<a
+											class="button is-outlined is-rounded is-fullwidth"
+											href={`${
+												"tel:" + this.state.data.contact
+											}`}
+										>
+											<span class="icon is-small">
+												<i
+													class="fa fa-phone"
+													aria-hidden="true"
+												></i>
+											</span>
+											<span>Call Me</span>
+										</a>
+										<a
+											class="button is-black is-rounded is-fullwidth"
+											href={`${
+												"mailto:" + this.state.data.email
+											}`}
+										>
+											<span class="icon is-small">
+												<i
+													class="fa fa-envelope-open"
+													aria-hidden="true"
+												></i>
+											</span>
+											<span>Email Me</span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
