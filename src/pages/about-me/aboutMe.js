@@ -21,6 +21,24 @@ const list = {
 		},
 	},
 };
+
+const imageAnim = {
+	normal: {
+		scale: 1,
+		zIndex: 1,
+	},
+	hover: {
+		scale: 1.5,
+		rotate: 360,
+		zIndex: 2,
+		transition: {
+			duration: 0.25,
+			type: "tween",
+			ease: "circOut",
+		},
+	},
+};
+
 class AboutMe extends Component {
 	constructor(props) {
 		super(props);
@@ -93,7 +111,8 @@ class AboutMe extends Component {
 										<a
 											class="button is-black is-rounded is-fullwidth"
 											href={`${
-												"mailto:" + this.state.data.email
+												"mailto:" +
+												this.state.data.email
 											}`}
 										>
 											<span class="icon is-small">
@@ -113,16 +132,28 @@ class AboutMe extends Component {
 							<div class="columns is-multiline">
 								{this.state.data.about.expertise.map((item) => (
 									// Every 3 items, make a row
-									<div class="column is-half-tablet is-one-third-desktop">
-										<img
-											src={item.imageLink ?? ""}
-											alt={item.title}
-										/>
-										<h2 class="has-text-black">
-											{item.title}
-										</h2>
-										<p class="">{item.description}</p>
-									</div>
+									<motion.div
+										variants={imageAnim}
+										initial="normal"
+										whileHover="hover"
+										class="column is-half-tablet is-one-third-desktop"
+									>
+										<div class="card">
+											<img
+												class="card-image"
+												src={item.imageLink ?? ""}
+												alt={item.title}
+											/>
+											<div class="card-content">
+												<h2 class="has-text-black">
+													{item.title}
+												</h2>
+												<p class="">
+													{item.description}
+												</p>
+											</div>
+										</div>
+									</motion.div>
 								))}
 							</div>
 						</div>

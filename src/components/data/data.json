@@ -55,37 +55,37 @@
 				"id": 2,
 				"title": "ASP Dot Net Core 3.1",
 				"description": "C#",
-				"imageLink": "http://loremflickr.com/1024/576/c#"
+				"imageLink": "http://loremflickr.com/1024/576/c#dotnet"
 			},
 			{
 				"id": 3,
 				"title": "Games Development",
 				"description": "Unity",
-				"imageLink": "http://loremflickr.com/1024/576/games"
+				"imageLink": "http://loremflickr.com/1024/576/gamesdevelopment"
 			},
 			{
 				"id": 4,
 				"title": "Video Editing",
-				"description": "After Effects",
-				"imageLink": "http://loremflickr.com/1024/576/video"
+				"description": "After Effects and Premiere Pro",
+				"imageLink": "http://loremflickr.com/1024/576/videoediting"
 			},
 			{
 				"id": 5,
-				"title": "Video Editing",
-				"description": "After Effects",
-				"imageLink": "http://loremflickr.com/1024/576/video"
+				"title": "Dev Ops",
+				"description": "Docker",
+				"imageLink": "http://loremflickr.com/1024/576/devops"
 			},
 			{
 				"id": 6,
-				"title": "Video Editing",
-				"description": "After Effects",
-				"imageLink": "http://loremflickr.com/1024/576/video"
+				"title": "MySQL",
+				"description": "Linq, EF Framework",
+				"imageLink": "http://loremflickr.com/1024/576/SQL"
 			},
 			{
 				"id": 7,
-				"title": "Video Editing",
-				"description": "After Effects",
-				"imageLink": "http://loremflickr.com/1024/576/video"
+				"title": "Flight Simulation",
+				"description": "FA-18C",
+				"imageLink": "http://loremflickr.com/1024/576/F18"
 			}
 		],
 		"skills": [
