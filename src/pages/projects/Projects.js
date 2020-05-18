@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavButton from "../../components/buttons/navbutton.js";
 import ProjectTile from "../../components/project-tile/project-tile.js";
 import Data from "../../components/data/data.json";
+import { InView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 const list = {
@@ -9,16 +10,15 @@ const list = {
 		x: -200,
 		opacity: 0,
 		transition: {
-			when: "afterChildren",
-		},
+			delay: 0.25
+		}
 	},
 	visible: {
 		x: 0,
 		opacity: 1,
 		transition: {
-			when: "beforeChildren",
-			staggerChildren: 0.25,
-		},
+			delay: 0.25
+		}
 	},
 };
 
@@ -59,26 +59,38 @@ class Projects extends Component {
 						<h3 class="title is-1 text-center">Projects</h3>
 						<motion.div
 							class="tile is-ancestor is-vertical"
-							initial="hidden"
-							animate="visible"
-							variants={list}
+							// initial="hidden"
+							// animate="visible"
+							// variants={list}
 						>
 							{this.state.data.projects.map((obj) => {
 								return (
 									<>
-										<motion.div
-											class="tile is-parent"
-											variants={list}
+										<InView
+											triggerOnce={true}
 										>
-											<ProjectTile
-												key={obj.id}
-												imageLink={obj.imageLink}
-												imageStyle={""}
-												title={obj.name}
-												subtitle={obj.description}
-												link={obj.link}
-											/>
-										</motion.div>
+											{({inView, ref}) => (
+												<div
+													ref={ref}
+												>
+													<motion.div 
+														class="tile is-parent"
+														variants={list}
+														initial="hidden"
+														animate={`${inView ? "visible" : "hidden"}`}
+													>
+														<ProjectTile
+															key={obj.id}
+															imageLink={obj.imageLink}
+															imageStyle={""}
+															title={obj.name}
+															subtitle={obj.description}
+															link={obj.link}
+														/>
+													</motion.div>
+												</div>
+											)}
+										</InView>
 									</>
 								);
 							})}
@@ -86,9 +98,7 @@ class Projects extends Component {
 					</div>
 					<div class="column"></div>
 				</div>
-				<NavButton
-					buttonAlign="is-centered"
-				/>
+				<NavButton buttonAlign="is-centered" />
 			</>
 		);
 	}
