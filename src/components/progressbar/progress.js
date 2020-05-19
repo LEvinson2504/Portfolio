@@ -1,30 +1,20 @@
 import * as React from 'react';
-import { useIntersection } from 'react-use';
-// import "../../../src/index"
+import "../../../src/index"
 
-//could make a default parameter to define the width
-export var ProgressBar = ({ percent }) => {
 
-	const intersectionRef = React.useRef(null);
-	const intersection = useIntersection(intersectionRef, {
-		root: null,
-		rootMargin: '0px',
-		threshold: 1
-	});
+export var ProgressBar = ({ width, percent }) => {
+
+	const [value, setValue] = React.useState(0);
+
+	React.useEffect(() => {
+		setValue(percent * width / 100);
+	}, [percent, width]);
 
 	return (
-		<div ref={intersectionRef}>
-			{intersection && intersection.intersectionRatio < 1
-				? (<div>
-					<div className="progress-div" style={{ width: `100%` }}>
-						<div style={{ width: `0%` }} className="progress" />
-					</div>
-				</div>)
-				: (<div>
-					<div className="progress-div" style={{ width: `100%` }}>
-						<div style={{ width: `${percent}%` }} className="progress" />
-					</div>
-				</div>)}
+		<div>
+			<div className="progress-div" style={{ width: `${width}%` }}>
+				<div style={{ width: `${value}%` }} className="progress" />
+			</div>
 		</div>
 	);
 };

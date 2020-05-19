@@ -174,7 +174,7 @@ class AboutMe extends Component {
 											<i class="fas fa-fill-drip"></i>{" "}
 											{item.title}
 										</p>
-										<ProgressBar percent={item.proficiency} />
+										<ProgressBar width={100} percent={item.proficiency} />
 									</div>
 								</>
 							))}
