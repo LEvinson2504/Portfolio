@@ -26,8 +26,8 @@ function Portfolio() {
 						<Home />
 					</Route>
 				</Switch>
-				<Social />
 			</Router>
+			<Social />
 		</>
 	);
 }

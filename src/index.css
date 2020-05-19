@@ -2,12 +2,44 @@ html {
   min-height: 100%; /* make sure it is at least as tall as the viewport */
   position: relative;
 }
-
 body {
   height: 100%; /* force the BODY element to match the height of the HTML element */
-  /* background-color: rgb(86, 180, 235); */
-  background: linear-gradient(180deg, #d26ac2, #46c9e5);
+  background-color: paleturquoise;
   margin-top: 20px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.all-free-download.com%2Fimages%2Fgraphiclarge%2Fvector_seamless_abstract_pattern_background_267528.jpg&f=1&nofb=1");
+  background-size: 200px;
+  /* background-size: cover; */
+  height: 40em;
+}
+
+.intro h1 {
+  color: aliceblue;
+  font-family: "IBM Plex Sans", sans-serif;
+  margin-left: 100px;
+  font-size: 90px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.freepik.com%2Ffree-vector%2Ftropical-trendy-seamless-pattern-vector_10083-404.jpg&f=1&nofb=1");
+  background-size: 200px;
+  /* background-size: cover; */
+  height: 50em;
+}
+
+.main div {
+  height: 400px;
+  width: 200px;
+  margin: 30px 20px;
+  background-color: aliceblue;
 }
 
 .margin-top {

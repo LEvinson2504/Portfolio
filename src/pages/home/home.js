@@ -33,61 +33,55 @@ class Home extends Component {
 		}
 
 		return (
-			<div class="container is-widescreen">
-				<div class="hero is-info is-large">
-					<div class="hero-body">
-						<div class="container is-fluid">
-							<motion.div
-								initial={{ opacity: 0, x: 200 }}
-								animate={{ opacity: 1, x: 0 }}
-								transition={{
-									type: "spring",
-									damping: 7,
-									velocity: 2,
-									duration: 0.5,
-								}}
-							>
-								<h1 class="title is-size-1 has-text-weight-bold has-text-right">
-									{this.state.data.title}
-								</h1>
-							</motion.div>
-							<motion.div
-								initial={{ opacity: 0, x: -200 }}
-								animate={{ opacity: 1, x: 0 }}
-								transition={{
-									type: "spring",
-									damping: 7,
-									velocity: 1,
-									duration: 0.5,
-								}}
-							>
-								<h2 class="subtitle is-size-4 has-text-justified">
-									{this.state.data.subtitle}
-								</h2>
-							</motion.div>
-							<br></br>
-							<motion.div
-								initial={{ opacity: 0, y: 200 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{
-									type: "spring",
-									damping: 7,
-									velocity: 2,
-									duration: 0.5,
-								}}
-							>
-								<NavButton
-									buttonName={this.state.data.subtitle_button}
-									buttonStyle="is-primary is-large"
-									buttonAlign="is-centered"
-									buttonLink="/about"
-									animate=""
-								/>
-							</motion.div>
-						</div>
+			<section class="hero is-info is-large">
+				<div class="hero-body">
+					<div class="container">
+						<motion.div
+							initial={{ opacity: 0, x: 200 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{
+								type: "spring",
+								damping: 7,
+								velocity: 2,
+								duration: 0.5,
+							}}
+						>
+							<h1 class="title is-size-1 has-text-weight-bold">
+								{this.state.data.title}
+							</h1>
+						</motion.div>
+						<motion.div
+							initial={{ opacity: 0, x: -200 }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{
+								type: "spring",
+								damping: 7,
+								velocity: 1,
+								duration: 0.5,
+							}}
+						>
+							<h2 class="subtitle">{this.state.data.subtitle}</h2>
+						</motion.div>
+						<motion.div
+							initial={{ opacity: 0, y: 200 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{
+								type: "spring",
+								damping: 7,
+								velocity: 2,
+								duration: 0.5,
+							}}
+						>
+							<NavButton
+								buttonName="Learn more"
+								buttonStyle="is-primary is-centered"
+								buttonLink="/about"
+								animate=""
+							/>
+						</motion.div>
 					</div>
 				</div>
-			</div>
+			</section>
 		);
 	}
 }

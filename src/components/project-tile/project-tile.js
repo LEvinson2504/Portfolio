@@ -18,7 +18,7 @@ const ProjectTile = (props) => {
 				<h2 class="subtitle">{props.subtitle ?? "Subtitle"}</h2>
 				<div class="buttons">
 					<Button
-						buttonName="Check it out on Github"
+						buttonName="Read More..."
 						buttonStyle="button is-link is-fullwidth"
 						buttonLink={props.link}
 					/>

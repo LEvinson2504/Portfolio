@@ -26,7 +26,7 @@ export default function Navbar() {
 					<span class="navbar-item">
 						<i class="fas fa-user-circle"></i> &nbsp;
 						<Link to="/about" class="has-text-white">
-							About
+							About me
 						</Link>
 					</span>
 				</div>
