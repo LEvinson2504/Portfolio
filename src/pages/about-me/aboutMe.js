@@ -110,7 +110,7 @@ class AboutMe extends Component {
 										<p class="has-text-black subtitle">
 											{item.title}
 										</p>
-										<ProgressBar width={100} percent={item.proficiency} />
+										<ProgressBar percent={item.proficiency} />
 									</div>
 								</>
 							))}
