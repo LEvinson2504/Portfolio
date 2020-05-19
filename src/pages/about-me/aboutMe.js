@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../../index";
 import Data from "../../components/data/data.json";
 import { motion } from "framer-motion";
-import ProgressBar from "../../components/progressbar/progress"
+import ProgressBar from "../../components/progressbar/progress";
 
 const list = {
 	hidden: {
@@ -21,6 +21,24 @@ const list = {
 		},
 	},
 };
+
+const imageAnim = {
+	normal: {
+		scale: 1,
+		zIndex: 1,
+	},
+	hover: {
+		scale: 1.5,
+		rotate: 360,
+		zIndex: 2,
+		transition: {
+			duration: 0.25,
+			type: "tween",
+			ease: "circOut",
+		},
+	},
+};
+
 class AboutMe extends Component {
 	constructor(props) {
 		super(props);
@@ -55,14 +73,17 @@ class AboutMe extends Component {
 					animate="visible"
 					variants={list}
 				>
-					<div class="columns margin-top is-desktop">
+					<div class="columns margin-top">
 						<div class="column is-one-third">
 							<div class="card">
 								<figure class="image is-fullwidth">
 									<img
 										class=""
-										src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mountainviewphoto.com%2Fwp-content%2Fuploads%2F2015%2F12%2Fheadshots-slide.jpg&f=1&nofb=1"
-										alt=""
+										src={
+											this.state.data.about
+												.profile_picture
+										}
+										alt="profile-pic"
 									/>
 								</figure>
 								<div class="card-content">
@@ -72,30 +93,72 @@ class AboutMe extends Component {
 									<h3 class="subtitle">
 										{this.state.data.about.job_title}
 									</h3>
+									<div class="buttons">
+										<a
+											class="button is-outlined is-rounded is-fullwidth"
+											href={`${
+												"tel:" + this.state.data.contact
+												}`}
+										>
+											<span class="icon is-small">
+												<i
+													class="fa fa-phone"
+													aria-hidden="true"
+												></i>
+											</span>
+											<span>Call Me</span>
+										</a>
+										<a
+											class="button is-black is-rounded is-fullwidth"
+											href={`${
+												"mailto:" +
+												this.state.data.email
+												}`}
+										>
+											<span class="icon is-small">
+												<i
+													class="fa fa-envelope-open"
+													aria-hidden="true"
+												></i>
+											</span>
+											<span>Email Me</span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="column is-two-thirds-desktop">
+						<div class="column is-two-thirds">
 							<h2 class="title has-text-dark"> Expertise </h2>
-							<div class="columns">
+							<div class="columns is-multiline">
 								{this.state.data.about.expertise.map((item) => (
-									<div class="column">
-										<img
-											src={item.imageLink ?? ""}
-											alt=""
-										/>
-										<h2 class="has-text-black">
-											{item.title}
-										</h2>
-										<p class="">
-											{item.description}
-										</p>
-									</div>
+									// Every 3 items, make a row
+									<motion.div
+										variants={imageAnim}
+										initial="normal"
+										whileHover="hover"
+										class="column is-half-tablet is-one-third-desktop"
+									>
+										<div class="card">
+											<img
+												class="card-image"
+												src={item.imageLink ?? ""}
+												alt={item.title}
+											/>
+											<div class="card-content">
+												<h2 class="has-text-black">
+													{item.title}
+												</h2>
+												<p class="">
+													{item.description}
+												</p>
+											</div>
+										</div>
+									</motion.div>
 								))}
 							</div>
 						</div>
 					</div>
-					<div class="columns is-desktop">
+					<div class="columns is-one-third">
 						<div class="column has-text-justified">
 							<h2 class="title has-text-dark"> Summary </h2>
 							{/* Could make this a component */}
@@ -108,6 +171,7 @@ class AboutMe extends Component {
 								<>
 									<div class="column">
 										<p class="has-text-black subtitle">
+											<i class="fas fa-fill-drip"></i>{" "}
 											{item.title}
 										</p>
 										<ProgressBar percent={item.proficiency} />
