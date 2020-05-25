@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "framer-motion": "^1.10.3",
+    "heroku": "^7.41.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-motion": "^0.5.2",
