@@ -48,7 +48,7 @@ class Home extends Component {
           </div>
           <div className="hero-body"></div>
         </section>
-        <section class="hero is-info is-large">
+        <section class="hero is-white is-large">
           <div class="hero-body">
             <div class="container">
               <motion.div

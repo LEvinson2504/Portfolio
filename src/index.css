@@ -9,12 +9,12 @@ body {
 }
 
 .title {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .title h1 {
   font-family: "Limelight", cursive;
-  font-size: 150px;
+  font-size: 10rem;
   font-weight: 500;
 }
 
