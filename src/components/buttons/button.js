@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const button = (props) => {
   return (
     <motion.a
-      class={props.buttonStyle ?? "button is-dark"}
+      class={props.buttonStyle ?? "button is-link"}
       style={{ textDecoration: "none" }}
       whileHover={{ scale: 1.01 }}
       whileTap={{ scale: 0.99 }}

@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        class="navbar is-dark is-fixed-top"
+        class="navbar is-link is-fixed-top"
         role="navigation"
         aria-label="main navigation"
       >
