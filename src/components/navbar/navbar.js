@@ -5,26 +5,26 @@ export default function Navbar() {
   return (
     <>
       <nav
-        class="navbar is-link is-fixed-top"
+        class="navbar is-fixed-top"
         role="navigation"
         aria-label="main navigation"
       >
         <div class="navbar-brand">
           <span class="navbar-item">
             <i class="fas fa-home"></i> &nbsp;
-            <Link to="/" class="has-text-white">
+            <Link to="/" class="has-text-black">
               Home
             </Link>
           </span>
           <span class="navbar-item">
             <i class="fas fa-tasks"></i> &nbsp;
-            <Link to="/projects" class="has-text-white">
+            <Link to="/projects" class="has-text-black">
               Projects
             </Link>
           </span>
           <span class="navbar-item">
             <i class="fas fa-user-circle"></i> &nbsp;
-            <Link to="/about" class="has-text-white">
+            <Link to="/about" class="has-text-black">
               About me
             </Link>
           </span>

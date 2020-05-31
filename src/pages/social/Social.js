@@ -30,7 +30,7 @@ class Social extends Component {
       return "Not loaded yet";
     } else {
       return (
-        <section class="hero is-dark is-small">
+        <section class="hero is-link is-small">
           <div class="hero-body">
             <div class="container is-desktop">
               <h1 class="title is-size-3 text-center">
