@@ -33,7 +33,7 @@ class Home extends Component {
 		}
 
 		return (
-			<section class="hero is-info is-large">
+			<section class="stripe hero has-background-success is-large">
 				<div class="hero-body">
 					<div class="container">
 						<motion.div
@@ -41,8 +41,8 @@ class Home extends Component {
 							animate={{ opacity: 1, x: 0 }}
 							transition={{
 								type: "spring",
-								damping: 7,
-								velocity: 2,
+								damping: 10,
+								velocity: 1,
 								duration: 0.5,
 							}}
 						>
@@ -55,9 +55,9 @@ class Home extends Component {
 							animate={{ opacity: 1, x: 0 }}
 							transition={{
 								type: "spring",
-								damping: 7,
+								damping: 10,
 								velocity: 1,
-								duration: 0.5,
+								duration: 1.5,
 							}}
 						>
 							<h2 class="subtitle">{this.state.data.subtitle}</h2>
@@ -86,4 +86,4 @@ class Home extends Component {
 	}
 }
 
-export default Home;
+export default Home; 

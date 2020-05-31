@@ -2,7 +2,6 @@ import * as React from 'react';
 import { useIntersection } from 'react-use';
 
 export var ProgressBar = ({ percent }) => {
-
 	const intersectionRef = React.useRef(null);
 	const intersection = useIntersection(intersectionRef, {
 		root: null,
