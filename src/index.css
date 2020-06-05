@@ -72,3 +72,7 @@ body {
 .margin-top {
   margin-top: 5px;
 }
+
+h1.about-me-heading {
+  font-size: 100px;
+}
